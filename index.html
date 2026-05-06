@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Faculda+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="logo-area">
+        <div class="logo-circle">🎓</div>
+        <h1>Faculda+</h1>
+        <p>Faculdades e cursos perto de você</p>
+      </div>
+
+      <h2>Entrar em Faculda+</h2>
+
+      <div class="social-login">
+        <button class="social-btn google">G</button>
+        <button class="social-btn facebook">f</button>
+        <button class="social-btn x">X</button>
+      </div>
+
+      <form id="loginForm">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required />
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite sua senha" required />
+
+        <a href="#" class="forgot">Esqueceu a senha?</a>
+
+        <button type="submit" class="login-btn">Continuar com E-mail</button>
+      </form>
+
+      <p id="message" class="message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
