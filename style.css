@@ -175,3 +175,14 @@ input:focus {
   75% { transform: translateX(-5px); }
   100% { transform: translateX(0); }
 }
+
+/* Ajuste nos ícones dos botões sociais */
+.social-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.social-btn {
+  gap: 10px;   /* diminui um pouco o espaço entre ícone e texto */
+}

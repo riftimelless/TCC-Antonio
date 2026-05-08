@@ -20,30 +20,45 @@
     position: relative;
   }
   
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #2f5bd3;
-  }
-  
-  .logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
+  /* ====================== HEADER ====================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #2f5bd3;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+.menu-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background: #f0f0f0;
+}
   
   /* Barra de pesquisa */
   .search-container {
