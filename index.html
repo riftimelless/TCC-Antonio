@@ -10,18 +10,26 @@
   <div class="login-container">
     <div class="login-card">
       <div class="logo-area">
-        <div class="logo-circle">🎓</div>
-        <h1>Faculda+</h1>
+        <h1 class="main-logo">Faculda+</h1>
         <p>Faculdades e cursos perto de você</p>
       </div>
 
       <h2>Entrar em Faculda+</h2>
 
+      <!-- Botões sociais -->
       <div class="social-login">
-        <button class="social-btn google">G</button>
-        <button class="social-btn facebook">f</button>
-        <button class="social-btn x">X</button>
+        <button class="social-btn google" id="google-btn">
+          <span>G</span> Continuar com Google
+        </button>
+        <button class="social-btn facebook" id="facebook-btn">
+          <span>f</span> Continuar com Facebook
+        </button>
+        <button class="social-btn x" id="x-btn">
+          <span>X</span> Continuar com X
+        </button>
       </div>
+
+      <div class="divider"><span>ou</span></div>
 
       <form id="loginForm">
         <label for="email">E-mail</label>
@@ -32,8 +40,13 @@
 
         <a href="#" class="forgot">Esqueceu a senha?</a>
 
-        <button type="submit" class="login-btn">Continuar com E-mail</button>
+        <button type="submit" class="login-btn">Entrar</button>
       </form>
+
+      <p class="create-account">
+        Não tem uma conta? 
+        <a href="#" id="create-account-link">Criar uma conta</a>
+      </p>
 
       <p id="message" class="message"></p>
     </div>
