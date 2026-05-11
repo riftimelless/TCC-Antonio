@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Perfil - Faculda+</title>
+  <link rel="stylesheet" href="perfil-style.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <header class="header">
+      <button onclick="window.history.back()" class="back-btn">←</button>
+      <h1>Meu Perfil</h1>
+      <div></div>
+    </header>
+
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="profile-pic" id="profilePic">
+          👤
+        </div>
+        <input type="file" id="photoInput" accept="image/*" hidden>
+        <button class="change-photo-btn" id="changePhotoBtn">Trocar Foto</button>
+        
+        <h2 id="user-name">Carregando...</h2>
+        <p id="user-email">email@exemplo.com</p>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-item">
+          <strong>Nome:</strong>
+          <span id="display-name">Nome do Usuário</span>
+          <input type="text" id="edit-name" class="edit-input" hidden>
+        </div>
+        <div class="info-item">
+          <strong>Email:</strong>
+          <span id="display-email"></span>
+          <input type="email" id="edit-email" class="edit-input" hidden>
+        </div>
+        <div class="info-item">
+          <strong>Nova Senha:</strong>
+          <span id="display-password">••••••••</span>
+          <input type="password" id="edit-password" class="edit-input" placeholder="Digite nova senha" hidden>
+        </div>
+      </div>
+
+      <button class="edit-btn" id="editBtn">Editar Perfil</button>
+      <button class="save-btn" id="saveBtn" hidden>💾 Salvar Alterações</button>
+      <button class="cancel-btn" id="cancelBtn" hidden>Cancelar</button>
+      
+      <button class="edit-btn" id="deleteProfileBtn" style="background: #e74c3c; margin-top: 15px;">Excluir Perfil</button>
+      <button onclick="window.history.back()" class="back-home-btn">Voltar</button>
+    </div>
+  </div>
+
+  <script src="perfil-script.js"></script>
+</body>
+</html>

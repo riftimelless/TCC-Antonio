@@ -54,31 +54,55 @@ passwordInput.addEventListener("input", removeErrorStyles);
 
 // ====================== BOTÕES SOCIAIS ======================
 document.getElementById("google-btn").addEventListener("click", () => {
-  message.textContent = "Conectando com Google...";
-  message.style.color = "#4285f4";
-  setTimeout(() => {
-    alert("✅ Login com Google simulado com sucesso!");
-    window.location.href = "home.html";
-  }, 800);
+  const nome = "João Silva";
+  const email = "joao.silva@gmail.com";
+  
+  salvarUsuarioSocial(nome, email, "Google");
 });
 
 document.getElementById("facebook-btn").addEventListener("click", () => {
-  message.textContent = "Conectando com Facebook...";
-  message.style.color = "#1877f2";
-  setTimeout(() => {
-    alert("✅ Login com Facebook simulado com sucesso!");
-    window.location.href = "home.html";
-  }, 800);
+  const nome = "Maria Oliveira";
+  const email = "maria.oliveira@facebook.com";
+  
+  salvarUsuarioSocial(nome, email, "Facebook");
 });
 
 document.getElementById("x-btn").addEventListener("click", () => {
-  message.textContent = "Conectando com X...";
-  message.style.color = "#000";
+  const nome = "Pedro Santos";
+  const email = "pedro.santos@x.com";
+  
+  salvarUsuarioSocial(nome, email, "X");
+});
+
+// Função auxiliar para salvar usuário de login social
+function salvarUsuarioSocial(nome, email, provedor) {
+  let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+  // Verifica se já existe usuário com esse email
+  const usuarioExistente = usuarios.findIndex(u => u.email === email);
+
+  if (usuarioExistente !== -1) {
+    // Atualiza o usuário existente
+    usuarios[usuarioExistente].nome = nome;
+  } else {
+    // Cria novo usuário
+    usuarios.push({
+      nome: nome,
+      email: email,
+      senha: "social_login", // senha fictícia
+      provedor: provedor
+    });
+  }
+
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+  message.textContent = `Conectando com ${provedor}...`;
+  message.style.color = "#2f5bd3";
+
   setTimeout(() => {
-    alert("✅ Login com X simulado com sucesso!");
     window.location.href = "home.html";
   }, 800);
-});
+}
 
 // ====================== CRIAR CONTA ======================
 document.getElementById("create-account-link").addEventListener("click", function(e) {

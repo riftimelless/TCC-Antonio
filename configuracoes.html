@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurações - Faculda+</title>
+  <link rel="stylesheet" href="configuracoes-style.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <header class="header">
+      <button onclick="window.history.back()" class="back-btn">←</button>
+      <h1>Configurações</h1>
+      <div></div>
+    </header>
+
+    <div class="settings-container">
+      <div class="setting-item">
+        <div>
+          <strong>🌙 Modo Escuro</strong>
+          <p>Ativar tema escuro</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <strong>🌐 Idioma</strong>
+          <p>Português (Brasil)</p>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <strong>ℹ️ Sobre o Faculda+</strong>
+          <p>Versão 1.0 - Projeto Educacional</p>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <a href="#" id="clearData">🗑️ Limpar todos os dados</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="configuracoes-script.js"></script>
+</body>
+</html>
