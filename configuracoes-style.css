@@ -1,9 +1,12 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body { 
-  font-family: Arial, Helvetica, sans-serif; 
-  background: #000; 
-  transition: background 0.3s;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
 }
 
 .app-container {
@@ -11,15 +14,9 @@ body {
   margin: 0 auto;
   background: #fff;
   min-height: 100vh;
-  transition: background 0.3s;
 }
 
-/* Modo Escuro */
-body.dark-mode .app-container {
-  background: #1a1a1a;
-  color: #eee;
-}
-
+/* Header */
 .header {
   display: flex;
   align-items: center;
@@ -29,16 +26,12 @@ body.dark-mode .app-container {
   border-bottom: 1px solid #eee;
 }
 
-body.dark-mode .header {
-  background: #1f1f1f;
-  border-bottom: 1px solid #333;
-}
-
 .back-btn {
   font-size: 28px;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 5px;
 }
 
 h1 {
@@ -46,13 +39,9 @@ h1 {
   color: #222;
 }
 
-body.dark-mode h1 {
-  color: #fff;
-}
-
-/* Container das configurações */
+/* Container */
 .settings-container {
-  padding: 15px 20px;
+  padding: 20px;
 }
 
 .setting-item {
@@ -61,10 +50,6 @@ body.dark-mode h1 {
   align-items: center;
   padding: 18px 0;
   border-bottom: 1px solid #eee;
-}
-
-body.dark-mode .setting-item {
-  border-bottom: 1px solid #333;
 }
 
 .setting-item:last-child {
@@ -78,10 +63,7 @@ body.dark-mode .setting-item {
 .setting-item p {
   color: #666;
   font-size: 14px;
-}
-
-body.dark-mode .setting-item p {
-  color: #aaa;
+  margin-top: 2px;
 }
 
 /* Toggle Switch */
@@ -123,12 +105,38 @@ input:checked + .slider:before {
   transform: translateX(24px);
 }
 
-/* Link */
+/* Link de limpar dados */
 a {
-  color: #2f5bd3;
+  color: #e74c3c;
   text-decoration: none;
+  font-size: 16px;
 }
 
-body.dark-mode a {
-  color: #5a9cff;
+a:hover {
+  text-decoration: underline;
+}
+
+.setting-text {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.setting-text img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.85;
+}
+
+.clear-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e74c3c;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.clear-link:hover {
+  text-decoration: underline;
 }

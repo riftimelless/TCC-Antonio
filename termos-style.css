@@ -1,0 +1,80 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  background: #000; 
+}
+
+.app-container {
+  max-width: 420px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.back-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1 { font-size: 22px; color: #222; }
+
+/* Conteúdo */
+.termos-container {
+  padding: 20px;
+}
+
+.termos-content h2 {
+  margin-bottom: 15px;
+  color: #2f5bd3;
+}
+
+.termos-content h3 {
+  margin: 20px 0 10px;
+  color: #333;
+  font-size: 17px;
+}
+
+.termos-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Botões */
+.termos-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn-recusar, .btn-aceitar {
+  flex: 1;
+  height: 52px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-recusar {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-aceitar {
+  background: #2f5bd3;
+  color: white;
+}

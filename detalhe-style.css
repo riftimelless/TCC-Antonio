@@ -1,0 +1,115 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  background: #000; 
+}
+
+.app-container {
+  max-width: 420px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+}
+
+/* Hero Image - Maior e com blend */
+.hero-header {
+  position: relative;
+  height: 260px;           /* Imagem maior */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradiente para fundir a imagem com o conteúdo branco */
+.hero-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, #fff, transparent);
+}
+
+.back-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Conteúdo */
+.content {
+  padding: 20px;
+  margin-top: -20px;       /* Sobrepoe um pouco na imagem */
+  position: relative;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+}
+
+.university-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.university-subtitle {
+  font-size: 18px;
+  color: #2f5bd3;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #666;
+}
+
+.tab.active {
+  color: #2f5bd3;
+  border-bottom: 3px solid #2f5bd3;
+  font-weight: 600;
+}
+
+/* Notícia */
+.news-item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.news-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
